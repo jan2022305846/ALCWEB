@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="Images/Icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Images/Icons/logo_transparent.png" alt="logo">
+        </div>
+        <div class="company">
+            <h1>Abu-abu Leather Works Corp. </h1>
+        </div>
+        <div class="search"></div>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="login.html">Log-in</a></li>
+                    <li><a href="about_us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <hr>
+        <div class="form-container">
+            <div class="title">
+                <h2>Order Form</h2>
+            </div>
+            <table class="form-table"> 
+                <tr>
+                    <td class="form-td">Transaction No.:</td>
+                    <td class="form-td">
+                        <input type="number" name="product_code">
+                    </td>
+                    <td class="form-td">Date:</td>
+                    <td colspan="2" class="form-td">
+                    <input type="date" id="appointment" name="appointment" value="2024-03-31" min="2024-03-31" max="2026-12-31">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-td">Product Code:</td>
+                    <td class="form-td">Name:</td>
+                    <td class="form-td">Price:</td>
+                    <td class="form-td">Quantity:</td>
+                    <td class="form-td">Amount:</td>
+                </tr>
+                <tr>
+                    <td class="form-td">
+                        <input type="number" name="product_code" style="text-align: center;">
+                    </td>
+                    <td class="form-td">
+                        <input type="text" name="name">
+                    </td>
+                    <td class="form-td">
+                        <input type="number" name="product_price" placeholder="&#8369;" dir="rtl">
+                    </td>
+                    <td class="form-td">
+                        <input type="number" name="product_quantity" style="text-align: center;">
+                    </td>
+                    <td class="form-td">
+                        <input type="number" name="amount" dir="rtl">
+                        <!--
+                            need JS or PHP script for automatic output
+                        -->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-td">Delivery Courier:</td>
+                    <td class="form-td">
+                        <select name="courier" align="center" class="select">
+                            <optgroup align="center">
+                                <option value="" disabled selected align="center">Select One</option>
+                                <option value="j&t" >J&T Express</option>
+                                <option value="ninjaVan">Ninja Van</option>
+                                <option value="2go">2GO Express</option>
+                                <option value="lbc">LBC Express</option>
+                                <option value="flash"> Flash Express</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td class="form-td">Delivery Fee:</td>
+                    <td class="form-td">
+                    </td >
+                    <td class="form-td">
+                        <input type="number" name="deliver_amount" placeholder="&#8369;" dir="rtl">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-td"></td>
+                    <td class="form-td"></td>
+                    <td class="form-td"></td>
+                    <td class="form-td"></td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" id="form-total">Total</td>
+                    <td class="form-total">&#8369;69.00</td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <a href="billing.html"><input type="button" value="Proceed"></a>
+                <a href="products.html"><input type="button" value="Select Product"></a>
+            </div>
+        </div>
+    <hr>
+    <footer class="footer">
+        <p>&copy; 2004 Janny Abu-abu. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
